@@ -20,7 +20,7 @@ const setPresence = () => {
     return;
   }
 
-  client = client || createDiscordClient('391934620418965504');
+  client = client || createDiscordClient('642855896745246732');
   const time = PlaybackAPI.currentTime();
   const currentTrack = PlaybackAPI.currentSong();
   const isPlaying = PlaybackAPI.isPlaying();
@@ -59,7 +59,7 @@ const setPresence = () => {
       startTimestamp: start,
       endTimestamp: end,
       instance: false,
-      largeImageKey: 'playing',
+      largeImageKey: 'gpmdp',
       largeImageText: Settings.get('service') === 'youtube-music' ? 'YouTube Music' : 'Google Play Music',
       partySize: queueTrackIndex,
       partyMax: queueLength,
